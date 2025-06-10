@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Сайт Низамова Айдара</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+
+  .header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .header h1 a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .header h1 a:hover {
+      color: rgb(2, 79, 41);
+  }
+
+  li a:hover{
+    color: rgb(2, 79, 41);
+  }
+
+  footer a:hover{
+    color: aquamarine;
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    margin: 0 15px;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .main-wrapper {
+    display: flex; 
+    align-items: stretch; 
+    padding: 20px; 
+    gap: 20px; 
+  }
+
+  .content {
+    flex: 1; 
+  }
+
+  
+  aside.aside {
+    width: 300px; 
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    
+    display:flex; 
+    flex-direction:column;
+    gap:10px; 
+    
+   }
+
+   aside article {
+     background-color:#fff; 
+     padding:10px; 
+     border-radius:8px; 
+     box-shadow:0 2px 5px rgba(0,0,0,0.1);
+   }
+
+   .footer {
+     background-color:#222; 
+     color:#fff; 
+     text-align:center; 
+     padding:10px; 
+    flex: 1;
+   }
+
+   footer.footer {
+            clear: both;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+   }
+    footer a {
+         color: #ddd;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+button {
+    background-color:#4CAF50;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+
+    transition:
+        background-color ease-in-out var(--transition-duration, .3s),
+        transform ease-in-out var(--transition-duration, .3s);
+}
+
+button:hover {
+    background-color:#45a049;
+}
+
+button {
+    --transition-duration: .6s; 
+}
+   @media(max-width:768px){
+     .main-wrapper{
+       flex-direction:center;
+       flex-direction:column; 
+     }
+     aside.aside{
+       width:auto; 
+     }
+   }
+</style>
+</head>
+<body>
+<header class="header">
+<h1><a href="./index.html">Сайт Низамова Айдара</a></h1>
+<p>Добро пожаловать на мой личный сайт!</p>
+<nav>
+<ul>
+<li><a href="./index.html">Главная</a></li>
+<li><a href="./blog.html">Блог</a></li>
+<li><a href="./projects.html">Проекты</a></li>
+<li><a href="./reports.html">Доклады</a></li>
+<li><a href="./resume.html">Резюме</a></li>
+</ul>
+</nav>
+</header>
+
+<div class="main-wrapper">
+<main class="content">
+<h2>О себе</h2>
+<p>Меня зовут Айдар Низамов. Я — начинающий веб-разработчик, интересуюсь программированием, дизайном и новыми технологиями. В свободное время люблю читать книги, смотреть фильмы и играть с котиками.</p>
+
+<section>
+<h3>Моё фото</h3>
+<img src="./img/my_photo.jpg" alt="Моё фото" width="200" height="200" />
+<p>Это я на свежем воздухе во время прогулки.</p>
+</section>
+
+<section>
+<h3>Мои увлечения</h3>
+<ul>
+<li>Веб-разработка</li>
+<li>Фотография</li>
+<li>Путешествия</li>
+<li>Коты и животные</li>
+</ul>
+</section>
+
+<section>
+<h3>Последние проекты</h3>
+<ul>
+<li><strong>Портфолио сайта:</strong> Создал сайт-визитку для своих проектов.</li>
+<li><strong>Блог о технологиях:</strong> Пишу статьи о программировании и новых трендах.</li>
+<li><strong>Мини-игра:</strong> Разработал простую игру на JavaScript.</li>
+</ul>
+</section>
+
+</main>
+
+<aside class="aside">
+<h4>Статья о тестах</h4>
+<p>Обзор методов тестирования программного обеспечения и их важность для разработки качественных приложений.</p>
+<h4>Статья о котиках</h4>
+<p>Интересные факты о котиках, советы по уходу и лучшие породы домашних кошек.</p>
+</aside>
+</div>
+<footer class="footer">
+&copy; 2024 Низамов Айдар. Все права защищены.<br/>
+<a href="https://github.com/riht7405" target="_blank">GitHub</a>&nbsp;|&nbsp; 
+<a href="https://t.me/yourtelegram" target="_blank">Telegram</a>&nbsp;|&nbsp; 
+<a href="https://vk.com/yourvkprofile" target="_blank">VK</a>&nbsp;|&nbsp; 
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-wrapper {
+  display: flex;
+  align-items: stretch;
+  padding: 20px;
+  gap: 20px; 
+}
+
+.content {
+  flex: 1;
+}
+
+aside.aside {
+  width: 300px; 
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius:8px; 
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+  
+  display:flex; 
+  flex-direction:column;
+  gap:10px;
+}
+
+aside article {
+   background-color:#fff; 
+   padding:10px; 
+   border-radius:8px; 
+   box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer.footer {
+    clear: both;
+    background-color:#333;
+    color:white;
+    text-align:center;
+    padding:15px 0;
+}
+
+footer a {
+    color:#ddd;
+    margin:0 10px;
+    text-decoration:none;
+}
+
+@media(max-width:768px){
+   .main-wrapper{
+     flex-direction: column; 
+   }
+   aside.aside{
+     width:auto; 
+   }
+}
+
+ .header h1 a:hover {
+      color: rgb(2, 79, 41);
+  }
+
+  li a:hover{
+    color: rgb(2, 79, 41);
+  }
+
+  footer a:hover{
+    color: aquamarine;
+  }
